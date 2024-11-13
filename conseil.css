@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #eeecec;
+    color: rgb(241, 40, 40);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.main-content {
+    padding: 40px 0;
+}
+
+.overview {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.overview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.overview p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Grille de services */
+.services {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Témoignages */
+.testimonials {
+    padding: 50px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-item p {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.testimonial-item h4 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}

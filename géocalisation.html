@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSG - Géolocalisation</title>
+    <link rel="stylesheet" href="géocalisation.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="menu"></div>
+
+    <section class="geo-hero">
+      <div class="hero-content">
+        <h1>Service de Géolocalisation</h1>
+        <p>
+          Surveillez vos biens en temps réel et gardez le contrôle avec notre
+          service de géolocalisation avancé.
+        </p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="feature">
+        <h2>Suivi en temps réel</h2>
+        <p>
+          Accédez à des informations précises sur la position de vos équipes et
+          véhicules.
+        </p>
+      </div>
+      <div class="feature">
+        <h2>Alertes personnalisées</h2>
+        <p>
+          Recevez des notifications instantanées en cas d'anomalies ou de
+          dépassements de périmètre.
+        </p>
+      </div>
+      <div class="feature">
+        <h2>Rapports détaillés</h2>
+        <p>
+          Obtenez des rapports complets sur les déplacements, les horaires et
+          les activités des agents.
+        </p>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <h2>Carte de Géolocalisation</h2>
+      <p>
+        Suivez en direct l'emplacement de vos équipes et assets sécurisés grâce
+        à notre interface interactive :
+      </p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.349340833706!2d-13.687818508065178!3d9.548185891927553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe129ab5fb6ad727%3A0x3f7198b47ffbffdf!2sConakry%2C%20Guin%C3%A9e!5e0!3m2!1sfr!2sfr!4v1607618046880!5m2!1sfr!2sfr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h2>Besoin de plus d'informations ?</h2>
+      <p>
+        Contactez-nous pour en savoir plus sur notre service de géolocalisation
+        .
+      </p>
+    </section>
+    <script>
+      fetch("menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* En-tête */
+.header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('header-background.jpg') center/cover;
+    text-align: center;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.header p {
+    font-size: 1.2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Section About */
+.about-us-section, .values-section, .team-section, .testimonial-section {
+    padding: 50px 20px;
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about-us-section.visible, .values-section.visible, .team-section.visible, .testimonial-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Valeurs */
+.values {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.value-item {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+    transform: scale(1.05);
+}
+
+/* Membres de l'équipe */
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+/* Témoignages */
+.testimonial {
+    margin: 20px 0;
+    background: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gardiennage.css" />
+    <script src="script.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="menu"></div>
+
+    <h1>
+      Grâce à son expertise dans le domaine de la sécurité, la Société SSG
+      répond à divers besoins et garantie de fournir un personnel qualifié et
+      compétent
+    </h1>
+    <div class="bloc10">
+      <img class="image10" src="image 10.jfif" width="400px" height="400px" />
+      <div>
+        <h1 class="garagent">Agent de sécurité</h1>
+        <p class="ads">
+          L’agent de sécurité et de prévention appelé ADS a légalement pour
+          fonction d’assurer de façon permanente, exceptionnelle ou discontinue,
+          la sécurité de biens, meubles ou immeubles, ainsi que celle des
+          personnes qui sont liées directement ou indirectement à la sécurité de
+          ces biens. La société SS2M met à votre disposition des agents de
+          sécurité sélectionnés parmi les meilleurs profils afin de répondre à
+          la demande du client. Nous mettons en place régulièrement des
+          formations pour nos agents et les préparons au début de chaque
+          mission.
+        </p>
+      </div>
+    </div>
+    <section>
+      <div class="bloc11">
+        <div>
+          <h1 class="garinc">Agent incendie</h1>
+          <p class="incendie">
+            L’agent de sécurité incendie et d’assistance à personnes (SSIAP) est
+            chargé de la prévention incendie dans un établissement répertorié
+            exigeant l’intervention des secours extérieurs avec des moyens
+            adaptés. Les bâtiments concernés sont les Établissements Recevant du
+            Public (ERP) et les Immeubles de Grande Hauteur (IGH). Nos Agents de
+            sécurité incendie en plus du Certificat de qualification
+            professionnelle Agent de prévention et de sécurité (CQP APS), ils
+            sont titulaire d’un diplôme d’Agent de Sécurité incendie et
+            d’Assistance à Personnes (SSIAP). Ils disposent également de
+            plusieurs années d’expériences sur le terrain tant en milieu
+            hospitaliers, Industriel, Etablissement recevant du public et dans
+            l’évènementiel.
+          </p>
+        </div>
+
+        <img src="image incendie.jfif" alt="" height="400px" width="400px" />
+      </div>
+    </section>
+    <script>
+      fetch("menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu").innerHTML = data;
+        });
+    </script>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 SSG sécurité - Sécurité Professionnelle de gardiennage.
+          Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

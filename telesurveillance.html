@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Télésurveillance - SSG Sécurité</title>
+    <link rel="stylesheet" href="telesurveillance.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Service de Télésurveillance</h1>
+    </header>
+
+    <!-- Section d'Introduction -->
+    <section class="intro">
+      <h2>Surveillance à Distance 24/7</h2>
+      <p>
+        Assurez la sécurité de vos biens et de vos proches grâce à notre service
+        de télésurveillance. Nos experts surveillent en continu vos
+        installations pour détecter les intrusions et réagir en temps réel.
+      </p>
+    </section>
+
+    <!-- Avantages de la Télésurveillance -->
+    <section class="benefits">
+      <h2>Pourquoi choisir notre télésurveillance ?</h2>
+      <div class="benefit-item">
+        <img src="camera.png" alt="Caméra de surveillance" />
+        <h3>Protection 24/7</h3>
+        <p>
+          Un service de télésurveillance disponible jour et nuit pour garantir
+          une protection permanente.
+        </p>
+      </div>
+      <div class="benefit-item">
+        <img src="alert.png" alt="Alerte en cas de danger" />
+        <h3>Alertes Immédiates</h3>
+        <p>
+          Recevez des alertes instantanées en cas d'intrusion ou de mouvement
+          suspect détecté.
+        </p>
+      </div>
+      <div class="benefit-item">
+        <img src="support.png" alt="Support client" />
+        <h3>Support Dédié</h3>
+        <p>
+          Un centre de support disponible pour toute assistance et intervention
+          rapide.
+        </p>
+      </div>
+    </section>
+
+    <!-- Appel à l'Action -->
+    <section class="cta">
+      <h2>Besoin d'un service de télésurveillance ?</h2>
+      <p>
+        Contactez-nous dès maintenant pour une consultation gratuite et une
+        offre personnalisée.
+      </p>
+      <button onclick="displayContactForm()">Contactez-nous</button>
+    </section>
+
+    <!-- Formulaire de Contact (caché par défaut) -->
+    <section class="contact-form" id="contactForm" style="display: none">
+      <h3>Demande d'information</h3>
+      <form action="submit_contact.php" method="POST">
+        <label for="name">Nom Complet :</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Adresse Email :</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Votre Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <script src="telesurveillance.css"></script>
+  </body>
+</html>

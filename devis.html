@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demande de Devis - Sécurité Professionnelle</title>
+    <link rel="stylesheet" href="devis.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="menu"></div>
+    <header>
+      <h1>Demande de Devis</h1>
+    </header>
+    <section class="devis-form-section">
+      <h2>Formulaire de Demande de Devis</h2>
+      <form action="submit_devis.php" method="POST" class="devis-form">
+        <!-- Informations Personnelles -->
+        <fieldset>
+          <legend>Informations Personnelles</legend>
+          <label for="name">Nom Complet :</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Adresse Email :</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Numéro de Téléphone :</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="company">Nom de l'Entreprise :</label>
+          <input type="text" id="company" name="company" required />
+        </fieldset>
+
+        <!-- Détails du Projet -->
+        <fieldset>
+          <legend>Détails du Projet</legend>
+          <label for="service">Type de Service :</label>
+          <select id="service" name="service" required>
+            <option value="">--Sélectionner un service--</option>
+            <option value="surveillance">Surveillance et gardiennage</option>
+            <option value="sécurité_incendie">Sécurité incendie</option>
+            <option value="sécurité_électronique">Sécurité électronique</option>
+            <option value="audit_conseil">Audit et conseil en Sécurité</option>
+          </select>
+
+          <label for="description">Description du Besoin :</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="5"
+            required
+          ></textarea>
+
+          <label for="budget">Budget Estimé (GN) :</label>
+          <input
+            type="number"
+            id="budget"
+            name="budget"
+            placeholder="Indiquez votre budget approximatif"
+          />
+
+          <label for="date">Date Souhaitée d'Intervention :</label>
+          <input type="date" id="date" name="date" />
+        </fieldset>
+
+        <!-- Lieu de la Prestation -->
+        <fieldset>
+          <legend>Lieu de la Prestation</legend>
+          <label for="address">Adresse de l'Intervention :</label>
+          <input type="text" id="address" name="address" required />
+
+          <label for="city">Ville :</label>
+          <input type="text" id="city" name="city" required />
+
+          <label for="country">Pays :</label>
+          <select id="country" name="country" required>
+            <option value="">--Sélectionner un pays--</option>
+            <option value="france">France</option>
+            <option value="belgique">Belgique</option>
+            <option value="guinee">Guinée</option>
+            <option value="senegal">Sénégal</option>
+          </select>
+        </fieldset>
+        <button type="submit" class="submit-button">
+          Soumettre la Demande
+        </button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 SSG sécurité. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style de l'en-tête */
+.header {
+    background-color: #cfd3d8;
+    color: rgb(221, 15, 15);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Style pour le contenu principal */
+.main-content {
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service-overview {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-overview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.service-overview p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Grille de services */
+.services {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(233, 17, 17, 0.1);
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Équipe */
+.team {
+    padding: 40px 0;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}

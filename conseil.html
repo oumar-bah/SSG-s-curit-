@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conseil en Sécurité - Gardiennage et Protection</title>
+    <link rel="stylesheet" href="conseil.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="menu"></div>
+
+    <!-- En-tête -->
+    <header class="header">
+      <div class="container">
+        <h1>Conseil en Sécurité</h1>
+        <p>Expertise en sécurité pour entreprises et particuliers</p>
+      </div>
+    </header>
+
+    <!-- Section principale -->
+    <main class="main-content">
+      <!-- Aperçu des services de conseil -->
+      <section class="overview">
+        <div class="container">
+          <h2>Nos Services de Conseil en Sécurité</h2>
+          <p>
+            Notre équipe d'experts en sécurité fournit des conseils
+            personnalisés pour améliorer la sécurité de vos installations. Nous
+            offrons des audits de sécurité, des solutions de surveillance, et
+            des plans d'intervention adaptés à vos besoins.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services proposés -->
+      <section class="services">
+        <div class="container">
+          <h2>Nos Services</h2>
+          <div class="service-grid">
+            <div class="service-item">
+              <h3>Audit de Sécurité</h3>
+              <p>
+                Analyse approfondie des risques et vulnérabilités de vos locaux
+                ou résidences afin d'identifier les points d'amélioration.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>Surveillance 24/7</h3>
+              <p>
+                Mise en place de systèmes de surveillance et de gardiennage pour
+                garantir la sécurité en temps réel.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>Gestion des Crises</h3>
+              <p>
+                Élaboration de plans de crise pour faire face aux situations
+                d'urgence avec des protocoles d'intervention rapide.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>Formation en Sécurité</h3>
+              <p>
+                Nous proposons des formations pour vos employés afin de les
+                préparer à gérer les risques et à adopter les bons comportements
+                en cas de problème.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Témoignages clients -->
+      <section class="testimonials">
+        <div class="container">
+          <h2>Ce que disent nos clients</h2>
+          <div class="testimonial-grid">
+            <div class="testimonial-item">
+              <p>
+                "Grâce à leurs conseils en sécurité, nous avons pu améliorer la
+                protection de nos locaux. Une équipe professionnelle et
+                réactive!"
+              </p>
+              <h4>Entreprise XYZ</h4>
+            </div>
+            <div class="testimonial-item">
+              <p>
+                "Leur audit de sécurité a révélé plusieurs failles dans notre
+                système de surveillance. Aujourd'hui, nous nous sentons beaucoup
+                plus en sécurité."
+              </p>
+              <h4>Client particulier</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      fetch("menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu").innerHTML = data;
+        });
+    </script>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 SSG sécurité - Sécurité et Gardiennage. Tous droits
+          réservés.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

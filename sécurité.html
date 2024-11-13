@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sécurité Rapprochée - Protection VIP</title>
+    <link rel="stylesheet" href="sécurité.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="menu"></div>
+
+    <!-- En-tête de la page -->
+    <header class="header">
+      <div class="container">
+        <h1>Service de Sécurité Rapprochée</h1>
+        <p>Protection personnalisée pour personnalités, VIP et événements</p>
+      </div>
+    </header>
+
+    <!-- Section principale -->
+    <main class="main-content">
+      <section class="service-overview">
+        <div class="container">
+          <h2>Notre Mission</h2>
+          <p>
+            Nous offrons des services de sécurité rapprochée pour assurer la
+            protection physique de personnalités publiques, VIP, et toute
+            personne nécessitant une surveillance renforcée. Nos équipes de
+            professionnels hautement formés sont prêtes à intervenir dans tous
+            les contextes, que ce soit lors d'événements publics ou pour une
+            protection privée.
+          </p>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <h2>Nos Services de Sécurité Rapprochée</h2>
+          <div class="service-grid">
+            <div class="service-item">
+              <h3>Protection VIP</h3>
+              <p>
+                Des agents de sécurité dédiés pour assurer votre sécurité lors
+                de déplacements ou événements.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>Surveillance discrète</h3>
+              <p>
+                Agents spécialisés dans la protection discrète, pour une
+                surveillance invisible mais efficace.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>Protection d'événements</h3>
+              <p>
+                Gestion des foules et sécurité renforcée pour des événements
+                privés ou publics, y compris les concerts, conférences et
+                manifestations.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>Accompagnement personnel</h3>
+              <p>
+                Accompagnement et protection personnalisée pour les déplacements
+                de haut profil, en France et à l'étranger.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="container">
+          <h2>Notre Équipe</h2>
+          <p>
+            Notre équipe est composée d'experts en protection rapprochée, issus
+            de forces spéciales, formés aux dernières techniques de défense et
+            de surveillance.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      fetch("menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu").innerHTML = data;
+        });
+    </script>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 SSG sécurité - Sécurité et Protection Personnalisée. Tous
+          droits réservés.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

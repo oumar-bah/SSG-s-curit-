@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Sécurité Événementielle - Protection et Gestion des Événements
+    </title>
+    <link rel="stylesheet" href="sécurité.css" />
+    <script src="script.js"></script>
+
+  </head>
+  <body>
+    <div id="menu"></div>
+
+    <!-- En-tête -->
+    <header class="header">
+      <div class="container">
+        <h1>Sécurité Événementielle</h1>
+        <p>Protection professionnelle pour vos événements publics et privés</p>
+      </div>
+    </header>
+
+    <!-- Section principale -->
+    <main class="main-content">
+      <!-- Aperçu des services -->
+      <section class="event-overview">
+        <div class="container">
+          <h2>Assurez la sécurité de vos événements</h2>
+          <p>
+            Nous fournissons des services de sécurité événementielle pour
+            garantir que votre événement se déroule dans un environnement sûr et
+            contrôlé. Que vous organisiez un concert, une conférence, ou un
+            festival, notre équipe expérimentée assure la gestion des foules, le
+            contrôle d'accès et la surveillance active.
+          </p>
+        </div>
+      </section>
+
+      <!-- Détails des services -->
+      <section class="event-services">
+        <div class="container">
+          <h2>Nos Services pour Événements</h2>
+          <div class="service-grid">
+            <div class="service-item">
+              <h3>Gestion des Foules</h3>
+              <p>
+                Contrôle de la circulation des personnes et gestion des foules
+                pour assurer la sécurité et éviter les débordements.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>Contrôle d'Accès</h3>
+              <p>
+                Inspection des billets et contrôle de l'accès pour garantir que
+                seules les personnes autorisées accèdent à l'événement.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>Surveillance Vidéo</h3>
+              <p>
+                Mise en place de systèmes de vidéosurveillance pour surveiller
+                l'événement en temps réel et réagir rapidement en cas
+                d'incident.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>Protection des VIP</h3>
+              <p>
+                Nous offrons des services de protection rapprochée pour les
+                artistes, conférenciers ou personnalités présentes à votre
+                événement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section galerie (optionnelle) -->
+      <section class="gallery">
+        <div class="container">
+        
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      fetch("menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu").innerHTML = data;
+        });
+    </script>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 SSG sécurité - Sécurité Professionnelle pour Événements.
+          Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,541 @@
+.haider {
+  position: relative;
+  background-image: url('serious-african-american-security-guard-uniform-standing-duty-city-center_753333-14082.jpg');
+  height: 100vh;
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#te {
+  font-size: 70px;
+  text-align: center;
+  color: rgb(253, 251, 251);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.2;
+}
+
+.highlight {
+  position: relative;
+  color: black; /* Couleur du texte */
+}
+
+.highlight::before,
+.highlight::after {
+  content: ""; /* Crée les tirets */
+  display: inline-block;
+  width: 150px; /* Largeur du tiret, ajustable */
+  height: 30px; /* Épaisseur du tiret */
+  background-color: yellow; /* Couleur des tirets */
+  vertical-align: middle;
+}
+
+.highlight::before {
+  margin-right: 15px; /* Espace entre le tiret et "SSG" */
+}
+
+.highlight::after {
+  margin-left: 15px; /* Espace entre "SSG" et le tiret */
+}
+
+.logo {
+  height: 60px; /* Ajustez la taille du logo si nécessaire */
+  margin-right: 15px; /* Espace entre le logo et les liens de navigation */
+  width: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espace entre le logo et les liens */
+  padding: 0 20px; /* Ajoute un peu de marge autour de la barre */
+}
+
+/* Taille du logo */
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Style pour l'icône de recherche */
+.navbar .fa-search {
+  color: #28a745; /* couleur verte pour l'icône */
+}
+
+
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px 20px; /* Ajustement de padding */
+  border-radius: 5px;
+  font-size: 25px;
+  color:black;
+}
+/* Style pour la section d'appel à l'action */
+.cta-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #575656;
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #ffd700; /* Couleur contrastante pour le titre */
+}
+
+.cta-section p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  color: #222;
+  background-color: #ffd700; /* Couleur contrastante principale */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e0b600;
+}
+
+.cta-button.secondary {
+  background-color: #555;
+  color: #fff;
+}
+
+.cta-button.secondary:hover {
+  background-color: #333;
+}
+/* Style de base pour la section */
+.scroll-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  margin: 50px 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  text-align: center;
+  color: #010c18;
+}
+
+/* Classe à ajouter pour afficher l'animation */
+.scroll-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.avanta {
+  display: flex;
+  max-width: 1200px; /* Adjust width as needed */
+  gap: 20px;
+  padding: 20px;
+}
+
+.qualite, .reactivite, .suivi {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0; /* Initial state for animation */
+  transform: translateY(20px); /* Initial offset for animation */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.qualite h2, .reactivite h2, .suivi h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.qualite p, .reactivite p, .suivi p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+  
+  .service{
+    text-align: center;
+    font-size: 30px;
+    
+  }
+  .bloc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }       
+               
+    
+.gar1{
+    background-color: rgb(174, 178, 179);
+    margin: 50px 50px;
+    margin-right: 150px;
+    
+    
+}
+.alar{
+  background-color: rgb(162, 164, 165);
+  margin: 50px 50px;
+  margin-right: 150px;
+  text-align: center;
+  font-size: 30px;
+}
+.H{
+  text-align: center;
+  font-size: 30px;
+}
+.bloc2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;      
+          
+}
+
+.gar2{
+  background-color: rgb(139, 141, 141);
+  margin: 50px 50px;
+  margin-right: 150px;
+  font-size: 30px;
+  
+}
+.rapproché {
+background-color: rgb(147, 149, 150);
+margin: 50px 50px;
+margin-right: 150px;
+text-align: center;
+
+}
+.loca{
+  text-align: center;
+  font-size: 30px;
+}
+Img{
+  height: 400px;
+  width: 500px;
+}
+.bloc3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+
+  }
+  
+.EVEN{
+  background-color: rgb(158, 161, 161);
+  margin: 50px 50px;
+  margin-right: 150px;
+  font-size: 30px;
+
+  }
+  .CONSEIL{
+    background-color: rgb(148, 151, 151);
+    margin: 50px 50px;
+    margin-right: 150px;
+    font-size: 20px;
+  
+  }
+  .ssg{
+    font-size: 80px;
+    color: rgb(20, 14, 15);
+  }
+  .bloc4{
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 50px;
+  
+  }
+  .img{
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  }
+  .texte{
+    margin: 50px 50px;
+    margin-right: 150px;
+    font-size: 20px;
+
+  }
+  .bloc5{
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 50px;
+  
+  }
+  .IMG1{
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  }
+  .TEXTE1{
+    margin: 50px 50px;
+    margin-right: 150px;
+    font-size: 20px;
+
+  }
+  .sommes{
+    font-size: 80px;
+    color: rgb(29, 28, 28);
+    display: flex;
+    justify-content: flex-start;
+  }
+  .NOS{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(243, 20, 20);
+  }
+  .bloc6 {
+    display: flex;
+    justify-content: center; /* Centre les logos horizontalement */
+    align-items: center; /* Centre les logos verticalement */
+    gap: 20px; /* Espace entre les logos */
+}
+
+.bloc6 img {
+    max-width: 200px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+}
+
+  .orange{
+    height: 300px;
+    width: 300px;
+  }
+  .societe{
+    height: 300px;
+    width: 300px;
+  }
+  .carrefour{
+    height: 250px;
+    width: 300px;
+  }
+  .che{
+    font-size: 30px;
+  }
+  /* Style général du footer */
+.footer {
+  background-color: #010c18;
+  color: white;
+  padding: 40px 0;
+  font-size: 0.9rem;
+}
+
+.footer .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Coordonnées de l'entreprise */
+.footer-contact h3, .footer-social h3, .footer-map h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-contact ul, .footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact ul li {
+  margin-bottom: 10px;
+}
+
+.footer-contact ul li strong {
+  font-weight: bold;
+}
+
+/* Liens vers les réseaux sociaux */
+.footer-social ul {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-social ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Carte Google intégrée */
+.footer-map iframe {
+  border: none;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Mentions légales et droits d'auteur */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #3d5062;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 768px) {
+  .footer .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-social ul {
+      justify-content: center;
+  }
+}
+/* Apparition des sections avec effet de glissement */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Effet zoom sur les images de la classe .bloc */
+.bloc img {
+  transition: transform 0.3s ease;
+}
+
+.bloc img:hover {
+  transform: scale(1.05);
+}
+
+/* Style de la barre de navigation quand elle est défilée */
+.navbar {
+  transition: background-color 0.5s ease;
+}
+
+.navbar-scrolled {
+  background-color: rgba(182, 189, 189, 0.8); /* Couleur de fond gris clair avec opacité */
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.bloc div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloc div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(46, 45, 45, 0.2);
+}
+.haider {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.bloc img {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.bloc:hover img {
+  transform: rotateY(180deg);
+}
+.wave-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: wave 0.6s ease forwards;
+}
+
+@keyframes wave {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #ff5733; /* Couleur personnalisée */
+  transition: color 0.3s ease;
+}
+/* Exemple de personnalisation de la navbar */
+.navbar {
+  font-family: 'Arial', sans-serif;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Personnalisation des liens de la navbar */
+.navbar-nav .nav-link {
+  color: #636262; /* Couleur des liens */
+  padding: 25px 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff5733; /* Couleur au survol */
+  transition: color 0.3s ease;
+}
+
+/* Modifier la couleur du bouton hamburger sur mobile */
+.navbar-toggler-icon {
+  background-color: #ff5733; /* Personnalisation de la couleur du bouton hamburger */
+}

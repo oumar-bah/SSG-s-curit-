@@ -1,0 +1,109 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #00274d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Intro */
+.intro {
+    text-align: center;
+    padding: 30px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #004080;
+}
+
+/* Section Avantages */
+.benefits {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.benefit-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.benefit-item img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Appel à l'action */
+.cta {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.cta button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta button:hover {
+    background-color: #e6b800;
+}
+
+/* Formulaire de Contact */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

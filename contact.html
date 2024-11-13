@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-nous - Sécurité Professionnelle</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contactez-nous</h1>
+    </header>
+
+    <section class="contact-section">
+      <h2>Nous sommes à votre écoute</h2>
+      <p>
+        Pour toute question ou information supplémentaire, n’hésitez pas à nous
+        contacter via le formulaire ci-dessous.
+      </p>
+
+      <form action="submit_contact.php" method="POST" class="contact-form">
+        <label for="nom">Nom Complet :</label>
+        <input type="text" id="name" name="name" class="input-field" required />
+
+        <label for="email">Adresse Email :</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="input-field"
+          required
+        />
+
+        <label for="téléphone">Numéro de Téléphone :</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="input-field"
+          required
+        />
+
+        <label for="sujet">Sujet :</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          class="input-field"
+          required
+        />
+
+        <label for="message">Votre Message :</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          class="input-field"
+          required
+        ></textarea>
+
+        <button type="submit" class="submit-button">Envoyer le Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Sécurité Professionnelle. Tous droits réservés.</p>
+      <p>Email : Belisto38@gmail.com | Téléphone : +224 629041616</p>
+      <p>Adresse : Hamdanllaye concasseur, Guinée</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

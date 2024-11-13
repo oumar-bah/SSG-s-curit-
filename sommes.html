@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qui sommes-nous ? - Sécurité Professionnelle</title>
+    <link rel="stylesheet" href="sommes.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Qui sommes-nous ?</h1>
+      <p>Votre partenaire en sécurité depuis 5 ans</p>
+    </header>
+
+    <section class="about-us-section">
+      <h2>Notre Histoire</h2>
+      <p>
+        Depuis notre fondation en 2019 en france, SSG sécurité est devenu un
+        leader dans le domaine de la sécurité. Nous nous engageons à offrir des
+        solutions innovantes, adaptées aux besoins spécifiques de nos clients,
+        qu'il s'agisse de protection physique, de sécurité électronique ou de
+        surveillance à distance.
+      </p>
+      <img src="history.jpg" alt="Historique de l'entreprise" />
+    </section>
+
+    <section class="values-section">
+      <h2>Nos Valeurs</h2>
+      <div class="values">
+        <div class="value-item">
+          <img src="integrity.jpg" alt="Intégrité" />
+          <h3>Intégrité</h3>
+          <p>
+            Nous opérons avec transparence et respect, assurant une relation de
+            confiance avec nos clients et partenaires.
+          </p>
+        </div>
+        <div class="value-item">
+          <img src="innovation.jpg" alt="Innovation" />
+          <h3>Innovation</h3>
+          <p>
+            Nous investissons dans les technologies les plus récentes pour vous
+            offrir des solutions de sécurité de pointe.
+          </p>
+        </div>
+        <div class="value-item">
+          <img src="commitment.jpg" alt="Engagement" />
+          <h3>Engagement</h3>
+          <p>
+            Nous mettons tout en œuvre pour garantir la sécurité de nos clients,
+            24h/24 et 7j/7.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <h2>Notre Équipe</h2>
+      <p>
+        Notre équipe est composée de professionnels expérimentés dans le domaine
+        de la sécurité. Chacun de nos membres est formé pour offrir un service
+        de qualité et garantir la sécurité de nos clients.
+      </p>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="ceo.jpg" alt="Directeur général" />
+          <h3></h3>
+          <p>Directeur général</p>
+        </div>
+        <div class="team-member">
+          <img src="manager.jpg" alt="Responsable Sécurité" />
+          <h3></h3>
+          <p>Responsable de la Sécurité</p>
+        </div>
+        <div class="team-member">
+          <img src="tech.jpg" alt="Expert Technique" />
+          <h3></h3>
+          <p>Expert Technique</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <h2>Témoignages</h2>
+      <div class="testimonial">
+        <p>
+          "SSG sécurité a transformé la façon dont nous gérons la sécurité dans
+          notre entreprise. Leur expertise et leur professionnalisme sont
+          inégalés."
+        </p>
+        <h3>- bella, PDG de ssg</h3>
+      </div>
+      <div class="testimonial">
+        <p>
+          "Nous avons fait appel à Sécurité Professionnelle pour protéger nos
+          installations, et nous sommes entièrement satisfaits de leurs
+          services."
+        </p>
+        <h3>- yaya, Directeur des opérations, ssg</h3>
+      </div>
+    </section>
+    <script>
+      fetch("menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu").innerHTML = data;
+        });
+    </script>
+
+    <footer>
+      <p>&copy; 2024 SSG sécurité. Tous droits réservés.</p>
+      <p>Email : Belisto38@gmail.com | Téléphone : +224 629 04 16 16</p>
+      <p>Adresse : Hamdanllaye concasseur , Guinéé</p>
+    </footer>
+  </body>
+</html>

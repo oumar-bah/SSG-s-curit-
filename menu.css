@@ -1,0 +1,20 @@
+.te{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 100px;
+    color: brown;
+  }
+  .navbar {
+      justify-content: space-around;
+      align-items: center;
+      background-color:white;
+      height: 60px;
+      font-size: 50px;
+    }
+    .navbar a{
+      text-decoration: none;
+      padding: 70px 70px;
+      border-radius: 5px;
+      font-size: 25px;
+      color:black;
+    }
